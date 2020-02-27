@@ -1,18 +1,18 @@
 {% set name = "buildbot-grid-view" %}
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d0ee62554c4e3068e9f6e8f4eee828b998051191f2e7d5c5a15a1e2c995f13d5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a4b5e411475e797875bdbdc5f397bd742363d55d01baf0db99d8f199fc3892d8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -29,12 +29,12 @@ test:
     - buildbot_grid_view
 
 about:
-  home: "https://buildbot.net/"
-  license: "GNU General Public (GPL)"
-  license_family: "LGPL"
-  license_file: "LICENSE"
-  summary: "Buildbot Grid View plugin"
-  doc_url: "https://docs.buildbot.net"
+  home: https://buildbot.net/
+  license: GNU General Public (GPL)
+  license_family: LGPL
+  license_file: LICENSE
+  summary: Buildbot Grid View plugin
+  doc_url: https://docs.buildbot.net
 
 extra:
   recipe-maintainers:
