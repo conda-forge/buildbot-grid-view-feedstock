@@ -10,9 +10,9 @@ source:
   sha256: 9ecf0969720c10e2a075ea4540df06db31a515b31cf584f5548a501f29a98011
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: '{{ PYTHON }} -m pip install . -vv '
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -27,11 +27,15 @@ requirements:
 test:
   imports:
     - buildbot_grid_view
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://buildbot.net/
-  license: GNU General Public (GPL)
-  license_family: LGPL
+  license: GPL-2.0-or-later
+  license_family: GPL
   license_file: LICENSE
   summary: Buildbot Grid View plugin
   doc_url: https://docs.buildbot.net
