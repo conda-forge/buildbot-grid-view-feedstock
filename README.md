@@ -5,11 +5,11 @@ Home: https://buildbot.net/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/buildbot-grid-view-feedstock/blob/master/LICENSE.txt)
 
 Summary: Buildbot Grid View plugin
 
-
+Documentation: https://docs.buildbot.net
 
 Current build status
 ====================
