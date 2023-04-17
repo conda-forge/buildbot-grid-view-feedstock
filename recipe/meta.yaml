@@ -1,5 +1,5 @@
 {% set name = "buildbot-grid-view" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: de91d2895a0e663da20867e2cfeb4c59630f1d2047e46829e9edfe6bcb68a6c8
+  sha256: 848047f3e46f679dd3c71976172ac2b3e645cd10006cadad879226da0642b377
 
 build:
   number: 0
